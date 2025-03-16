@@ -15,11 +15,25 @@ The 2020 AAPM-Mayo dataset [link][https://www.cancerimagingarchive.net/collectio
 
 ## Getting Started
 
-### Train
+### Installation
 
+* Clone this repository
+```
+git clone
+cd
+```
+
+* install libraries
+```
+pip install -r requirements.txt
+```
+
+### Train
+```
+python train.py
+```
 
 ### Test
-
-
-
-
+```
+python test.py
+```
