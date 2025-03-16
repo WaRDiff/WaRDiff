@@ -1,0 +1,77 @@
+dataset: mayo2016
+
+mayo2016:
+  train_full_datapath: 'path_of_your_dataset'
+  train_quarter_datapath: 'path_of_your_dataset'
+  test_full_datapath: 'path_of_your_dataset'
+  test_quarter_datapath: 'path_of_your_dataset'
+
+mayo2020:
+  train_full_datapath: 'path_of_your_dataset'
+  train_quarter_datapath: 'path_of_your_dataset'
+  test_full_datapath: 'path_of_your_dataset'
+  test_quarter_datapath: 'path_of_your_dataset'
+
+model:
+  in_channels: 4
+  out_channels: 1
+  image_size: 256
+  model_channels: 8
+  num_res_blocks: 1
+  attention_resolutions: (8, )
+  dropout: 0
+  channel_mult: (1, 2, 4, 8)
+  conv_resample: True
+  dims: 2
+  num_classes: 2
+  use_checkpoint: False
+  use_fp16: False
+  num_heads: 1
+  num_head_channels: -1
+  num_heads_upsample: -1
+  use_scale_shift_norm: True
+  resblock_updown: False
+  use_new_attention_order: False
+
+diffusion:
+  image_size: 256
+  timesteps: 1000
+  sampling_timesteps: 100
+  objective: pred_res_noise
+  use_wahfem: True
+  ddim_sampling_eta: 0.
+  loss_type: l1
+  noise_coff: 0.7
+  freq_coff: 0.15
+  photo_coff: 0.2
+  wavelet_type: haar
+  condition: True
+
+train:
+  batch_size: 1
+  num_workers: 2
+  augmentation: True
+  epochs: 200
+
+savepath2016:
+  model_savepath: 'results/wardiff2016'
+  validation_savepath: 'results/wardiff2016/validation'
+  test_savepath: 'results/wardiff2016/test'
+
+savepath2020:
+  model_savepath: 'results/wardiff2020'
+  validation_savepath: 'results/wardiff2020/validation'
+  test_savepath: 'results/wardiff2020/test'
+
+optim:
+  optimizer: "AdamW"
+  learning_rate: 0.0001
+  weight_decay: 0.000001
+  amsgrad: False
+  eps: !!float 1e-8
+
+  scheduler: "CosineAnnealingLR"
+  step_size: 50
+  gamma: 0.8
+  T_max: 100
+  patience: 10
