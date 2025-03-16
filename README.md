@@ -19,8 +19,8 @@ The 2020 AAPM-Mayo dataset [link][https://www.cancerimagingarchive.net/collectio
 
 * Clone this repository
 ```
-git clone
-cd
+git clone https://github.com/WaRDiff/WaRDiff.git
+cd WaRDiff
 ```
 
 * install libraries
