@@ -1,0 +1,10 @@
+torch==1.13.1
+torchaudio==0.13.1
+torchvision==0.14.1
+torchmetrics==0.10.2
+numpy==1.24.4
+matplotlib==3.7.5
+torchinfo==1.7.2
+torchsummary==1.5.1
+lpips==0.1.4
+omegaconf==2.3.0
