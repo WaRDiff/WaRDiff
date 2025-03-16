@@ -8,9 +8,9 @@ Low-dose computed tomography (LDCT) reduces radiation exposure compared to norma
 
 ## Datasets
 
-The 2016 AAPM-Mayo dataset [link][https://ctcicblog.mayo.edu/2016-low-dose-ct-grand-challenge/]
+The 2016 AAPM-Mayo dataset [link](https://ctcicblog.mayo.edu/2016-low-dose-ct-grand-challenge/)
 
-The 2020 AAPM-Mayo dataset [link][https://www.cancerimagingarchive.net/collection/ldct-and-projection-data/]
+The 2020 AAPM-Mayo dataset [link](https://www.cancerimagingarchive.net/collection/ldct-and-projection-data/)
 
 
 ## Getting Started
