@@ -1,4 +1,4 @@
-## Hi there 👋
+## WaRDiff: Wavelet based Residual Diffusion for CT Image Denoising (MICCAI 2025)
 
 <!--
 **WaRDiff/WaRDiff** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
